@@ -4,6 +4,8 @@ import { Marvel } from "./components/CharacterDetails";
 import { Main } from "./components/Main";
 import NavigationBar from "./components/NavigationBar";
 import './components/Styles.css';
+import { Browse } from "./components/browse";
+import { Comics } from "./components/comics";
 
 
 function App() {
@@ -12,7 +14,8 @@ function App() {
       <NavigationBar />
       <Routes>
         <Route path='/' element={<Main />} />
-        <Route path='/:id' element={<Marvel />} />
+        <Route path='/:id' element={<Browse />} />
+        <Route path='/comics' element={<Comics />} />
       </Routes>
     </>
   )
