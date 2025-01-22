@@ -14,7 +14,8 @@ function App() {
       <NavigationBar />
       <Routes>
         <Route path='/' element={<Main />} />
-        <Route path='/:id' element={<Browse />} />
+        <Route path='/browse' element={<Browse />} />
+        <Route path='/:id' element={<Marvel />} />
         <Route path='/comics' element={<Comics />} />
       </Routes>
     </>

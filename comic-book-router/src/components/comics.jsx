@@ -19,7 +19,7 @@ export const Comics = () => {
                             <ul>
                                 {item.comics.items.map(comic => (
                                     <li key={comic.name}>
-                                        <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="hero image" />
+                                        <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="comic image" />
 
                                         {comic.name}
                                     </li>
