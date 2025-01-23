@@ -22,6 +22,7 @@ export const Marvel = () => {
                         </div>
                         <div className="left-box">
                             <h1>{item.name}</h1>
+                            <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="hero image" />
                             <h4>{item.description}</h4>
                             <h1>Comics</h1>
                             <ul>
